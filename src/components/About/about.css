@@ -1,0 +1,25 @@
+#about {
+   
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .aboutContent {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+  
+  .aboutTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .aboutDesc {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 50rem;
+  }
+  
