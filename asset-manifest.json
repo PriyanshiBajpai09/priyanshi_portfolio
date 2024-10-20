@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/priyanshi_portfolio/static/css/main.5d5361ad.css",
+    "main.js": "/priyanshi_portfolio/static/js/main.f74fb709.js",
+    "static/media/image.png": "/priyanshi_portfolio/static/media/image.44dffaa0aab481ebd708.png",
+    "static/media/instagram.png": "/priyanshi_portfolio/static/media/instagram.0bcd1dcb7d853c327af7.png",
+    "index.html": "/priyanshi_portfolio/index.html",
+    "main.5d5361ad.css.map": "/priyanshi_portfolio/static/css/main.5d5361ad.css.map",
+    "main.f74fb709.js.map": "/priyanshi_portfolio/static/js/main.f74fb709.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d5361ad.css",
+    "static/js/main.f74fb709.js"
+  ]
+}
