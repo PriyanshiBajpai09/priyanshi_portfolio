@@ -1,84 +1,75 @@
-#skills{
-    width: 100vw;
-    max-width: 65rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-
+.skills-container {
+  padding: 2rem;
+  color: white;
 }
 
-.skillTitle{
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 3rem;
-    margin-bottom: 1.5rem;
-
+.section-title {
+  color: #f0c330;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-.skillDesc{
-    font-weight: 400;
-    font-size: 1rem;
-    max-width: 51rem;
-    padding: 0 2rem;
-
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
 }
 
-.skillBars{
-    margin: 1.5rem;
-    width: 100vw;
-    max-width: 80%;
-    text-align: left;
-
+.tech-card {
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 15px rgba(240, 195, 48, 0.3);
 }
 
-.skillBar{
-    display: flex;
-    margin: 1rem;
-    padding: 1.5rem 2rem;
-    border-radius: 0.5rem;
-    background: rgb(50, 50, 50);
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  color: white;
+  width: 100px;
 }
 
-.skillBarImg{
-    object-fit: cover;
-    height: 3rem;
-    width: 3rem;
-    margin-right: 2rem;
-
+.icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #f0c330;
 }
 
-.skillBarText>p{
-    font-size: 0.9rem;
-    font-weight: 200;
-
+.experience-card {
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 800px;
+  width: 90%;
+  color: white;
+  box-shadow: 0 0 15px rgba(240, 195, 48, 0.3);
+  text-align: left;
 }
 
-@media screen and (max-width:720px) {
-    .skillBarText>p {
-        font-size: 2vw;
-
-    }
-    
+.experience-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #f0c330;
 }
 
+.experience-card p {
+  margin: 0.3rem 0;
+}
 
-@media screen and (max-width:480px) {
-    .skillBarText>p {
-        font-size: 3vw;
+.experience-card ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
 
-    }
-
-    .skillBarImg{
-        height: 2.25rem;
-        width: 2.25rem;
-
-    }
-
-    .skillBarText>h2{
-        font-size: 5vw;
-        
-    }
+.experience-card ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
 }

@@ -1,69 +1,94 @@
-
+/* ================== Projects Section ================== */
+#projects {
+  padding: 2rem;
+  text-align: center;
+}
 
 .projectDesc {
-    font-weight: 300;
-    font-size: 1rem;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #ccc;
+  max-width: 40rem;
+  margin: 0 auto 2rem;
 }
 
 .projectCards {
-    margin: 1rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Force single row */
+  overflow-x: auto;
 }
 
 .projectCard {
-    background: rgb(50,50,50);
-    border-radius: 8px;
-    padding: 1rem;
-    width: 45%;
-    min-width: 12rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* border: 2px solid #f0c330; */
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 30%;
+  min-width: 260px;
+  color: white;
+  box-shadow: 0 0 15px rgba(240, 195, 48, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .projectCard:hover {
-    transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(240, 195, 48, 0.3);
 }
 
 .projectTitle {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #f0c330;
+  margin-bottom: 0.5rem;
+}
+
+.projectTech {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 0.6rem;
 }
 
 .projectDescription {
-    font-size: 1rem;
-    font-weight: 300;
-    color: white;
+  text-align: left;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
 }
 
-#projects {
-    padding: 2rem;
+.projectDescription li {
+  margin-bottom: 0.3rem;
 }
 
+.github-link {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: bold;
+}
 
+.github-link:hover {
+  text-decoration: underline;
+}
 
+/* ================== Contact Section ================== */
 #contactPage {
   min-height: calc(100vh - 4rem);
   width: 90vw;
-  max-width: 60rem;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 2rem 0;
-  box-sizing: border-box;
 }
 
-/* Form section title and description */
 .contactPageTitle {
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
   color: #f0c330;
 }
+
 .contactDesc {
   font-size: 1rem;
   font-weight: 300;
@@ -72,24 +97,20 @@
   max-width: 40rem;
 }
 
-/* Project cards kept unchanged */
-
-/* Contact Form Container */
+/* Form */
 .contactForm {
   width: 100%;
   max-width: 500px;
+  background: #1f1f1f;
   padding: 2rem 1.5rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(240, 195, 48, 0.3);;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-/* Input fields and textarea */
-.name,
-.email,
-.msg {
+input,
+textarea {
   width: 100%;
   margin: 0.5rem 0;
   padding: 0.75rem 1rem;
@@ -101,18 +122,16 @@
   transition: background 0.3s, box-shadow 0.3s;
 }
 
-.name:focus,
-.email:focus,
-.msg:focus {
+input:focus,
+textarea:focus {
   outline: none;
   background: #333;
   box-shadow: 0 0 0 2px #f0c330;
 }
 
-/* Submit button */
 .submitBtn {
   margin: 1.5rem 0;
-  padding: 0.75rem 3rem;
+  padding: 0.75rem 2.5rem;
   font-size: 1rem;
   font-weight: 600;
   color: #121212;
@@ -120,22 +139,18 @@
   border: none;
   border-radius: 2rem;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
-  box-shadow: 0 4px 12px rgba(240, 195, 48, 0.3);
+  transition: transform 0.2s, box-shadow 0.3s;
 }
 
 .submitBtn:hover {
-  background-color: #ffd646;
-  box-shadow: 0 6px 20px rgba(240, 195, 48, 0.5);
   transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(240, 195, 48, 0.5);
 }
 
 .submitBtn:active {
   transform: scale(0.98);
-  box-shadow: 0 3px 10px rgba(240, 195, 48, 0.4);
 }
 
-/* Social links */
 .links {
   display: flex;
   justify-content: center;
@@ -152,4 +167,20 @@
 .link:hover {
   transform: scale(1.1);
   filter: brightness(1.2);
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .projectCard {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projectCards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectCard {
+    width: 90%;
+  }
 }
